@@ -1,0 +1,42 @@
+.flight-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    margin: 16px 0;
+    transition: transform 0.2s;
+  
+    &:hover {
+      transform: scale(1.01);
+    }
+  
+    .airline-logo {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+  
+    .flight-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    .flight-details {
+      display: flex;
+      flex-direction: column;
+    }
+
+    button {
+      background-color: #ff6600;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+  img{
+    height: 100px;
+    width: 100px;
+  }
