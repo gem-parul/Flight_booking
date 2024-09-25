@@ -1,33 +1,34 @@
 .flight-card {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 16px;
-    margin: 16px 0;
-    transition: transform 0.2s;
-  
-    &:hover {
-      transform: scale(1.01);
-    }
-  
-    .airline-logo {
-      width: 50px;
-      height: 50px;
-      margin-right: 10px;
-    }
-  
-    .flight-info {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-  
-    .flight-details {
-      display: flex;
-      flex-direction: column;
-    }
-
-    button {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+  .duration{
+    position: relative;
+    top: -4px;
+  }
+  .book-btn{
+    position: relative;
+    top: -0.7rem;
+  }
+  &:hover {
+    transform: scale(1.01);
+  }
+  .airline {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 2rem;
+  }
+  .flight-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    .book-button {
       background-color: #ff6600;
       color: white;
       border: none;
@@ -35,8 +36,50 @@
       border-radius: 5px;
       cursor: pointer;
     }
+    .flight-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 92%;
+      .departure-info, .arrival-info, .duration {
+        display: flex;
+        flex-direction: column;
+        margin-top: -2rem;
+      }
+      .location {
+        font-size: 16px;
+        font-weight: 400;
+        .code{
+          font-weight: 600;
+        }
+      }
+      .time {
+        font-size: 24px;
+        color: #555;
+        font-weight:600;
+      }
+      .duration {
+        margin: 0 20px;
+        font-size: 18px;
+        color: #777;
+        font-weight: 600;
+      }
+    }
+    .price-info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      .price {
+        font-size: 24px;
+        font-weight: 600;
+      }
+      .emi-info {
+        font-size: 12px;
+        .emi-price{
+          font-weight: 700;
+          font-size: 14px;
+        }
+      }
+    }
   }
-  img{
-    height: 100px;
-    width: 100px;
-  }
+}

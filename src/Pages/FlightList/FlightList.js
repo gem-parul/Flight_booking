@@ -3,9 +3,11 @@ import FlightCard from './../FlightCard/FlightCard';
 
 const FlightList = ({ flights }) => {
   return (
-    <div>
+    <div class="p-2">
       {flights.map(flight => (
+        <div class="p-2">
         <FlightCard key={flight.id} flight={flight} />
+        </div>
       ))}
     </div>
   );
