@@ -5,7 +5,7 @@ const Navbar  = ({ onLogout }) => {
     <div>
          <nav className="navbar">
       <div className="navbar-brand">
-        <h1>Flight Finder</h1> {/* Replace this with your logo if you have one */}
+        <h1>Flight Finder</h1>
       </div>
 
       <div className="navbar-menu">

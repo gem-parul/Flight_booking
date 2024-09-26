@@ -6,23 +6,29 @@
     border-radius: 8px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(99, 98, 98, 0.2);
+    justify-content: space-around;
+    font-size: 16px;
     span {
       margin-right: 10px;
       font-weight: bold;
     }
-  
     .filter-btn {
       background-color: #ffffff;
-      border: 1px solid #ccc;
+      border: none;
       padding: 5px 10px;
       margin-right: 5px;
       cursor: pointer;
       border-radius: 5px;
-      transition: background-color 0.3s ease;
-  
+      transition: color 0.3s ease;
+      font-weight: 500;
+      font-size: 15px;
+      
       &.active {
-        background-color: #007bff;
-        color: white;
+       color: #007bff;
+      }
+  
+      span {
+        margin-left: 5px;
       }
     }
-  }
+}

@@ -1,0 +1,70 @@
+.back {
+    display: flex;
+    justify-content: center; /* Center the card horizontally */
+    align-items: center; /* Center the card vertically */
+    height: 100vh; /* Ensure full viewport height */
+  
+    .login-img {
+      width: 100vw;
+      height: 100vh;
+      background-size: cover; /* Ensure full background coverage */
+      background-repeat: no-repeat;
+    }
+  }
+  
+  .card {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%; /* Responsive width for different screen sizes */
+    height: 100%;
+    background-color: #fff;
+    border-radius: 18rem 0 0 18rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 2rem; /* Add some padding for better spacing */
+  
+    form {
+      display: flex; /* Arrange form elements horizontally */
+      flex-direction: column; /* Stack them vertically */
+      gap: 1rem; /* Add space between form fields */
+    }
+  
+    .form-group {
+      display: flex; /* Arrange label and input horizontally */
+      align-items: center; /* Align label and input vertically */
+    }
+  
+    label {
+      width: 100px; /* Limit label width */
+      margin-right: 1rem; /* Add margin between label and input */
+    }
+  
+    input[type="text"],
+    input[type="password"] {
+      width: 100%; /* Make fields fill the available width */
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  
+    button {
+      width: 100%; /* Make button fill the available width */
+      padding: 0.75rem 1rem; /* Adjust button padding */
+      background-color: #333; /* Set button background color */
+      color: #fff; /* Set button text color */
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* Responsive adjustments for smaller screens */
+    .card {
+      width: 70%;
+    }
+  
+    .form-group label {
+      width: 80px;
+    }
+  }

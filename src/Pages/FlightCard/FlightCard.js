@@ -49,9 +49,9 @@ const FlightCard = ({ flight }) => {
             <span>Non Refundable</span>
           )}
         </span>
-          <div class="flight-details-link">
+          <div className="flight-details-link">
           <span>Flight Details</span>
-          <span class="dropdown-icon">&lt;</span>
+          <span className="dropdown-icon">&lt;</span>
         </div>
       </div>
     </div>
