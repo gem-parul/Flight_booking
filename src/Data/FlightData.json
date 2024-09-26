@@ -10,7 +10,8 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 2,
@@ -23,7 +24,8 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 3,
@@ -36,11 +38,12 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 4,
-    "airline": "Air India",
+    "airline": "AirIndia",
     "departure": "15:45",
     "duration": "2h 15m",
     "arrival": "18:00",
@@ -49,11 +52,12 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 5,
-    "airline": "GoAir",
+    "airline": "AkasaAir",
     "departure": "18:45",
     "duration": "2h 30m",
     "arrival": "21:15",
@@ -62,7 +66,8 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 6,
@@ -75,7 +80,8 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 7,
@@ -88,11 +94,12 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 8,
-    "airline": "Air India",
+    "airline": "AirIndia",
     "departure": "21:30",
     "duration": "2h 40m",
     "arrival": "00:10",
@@ -101,7 +108,8 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 9,
@@ -114,11 +122,12 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 10,
-    "airline": "GoAir",
+    "airline": "AkasaAir",
     "departure": "19:00",
     "duration": "2h 20m",
     "arrival": "21:20",
@@ -127,7 +136,8 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 11,
@@ -140,11 +150,12 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 12,
-    "airline": "Air India",
+    "airline": "AirIndia",
     "departure": "13:45",
     "duration": "2h 30m",
     "arrival": "16:15",
@@ -153,7 +164,8 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 13,
@@ -166,7 +178,8 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 14,
@@ -179,11 +192,12 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 15,
-    "airline": "GoAir",
+    "airline": "AkasaAir",
     "departure": "12:20",
     "duration": "2h 30m",
     "arrival": "14:50",
@@ -192,7 +206,8 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 16,
@@ -205,7 +220,8 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 17,
@@ -218,11 +234,12 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 18,
-    "airline": "Air India",
+    "airline": "AirIndia",
     "departure": "06:00",
     "duration": "2h 40m",
     "arrival": "08:40",
@@ -231,7 +248,8 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 19,
@@ -244,11 +262,12 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 20,
-    "airline": "GoAir",
+    "airline": "AkasaAir",
     "departure": "19:15",
     "duration": "2h 15m",
     "arrival": "21:30",
@@ -257,7 +276,8 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 21,
@@ -270,7 +290,8 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 22,
@@ -283,11 +304,12 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 23,
-    "airline": "Air India",
+    "airline": "AirIndia",
     "departure": "08:45",
     "duration": "2h 15m",
     "arrival": "11:00",
@@ -296,7 +318,8 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 24,
@@ -309,7 +332,8 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 25,
@@ -322,11 +346,12 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 26,
-    "airline": "GoAir",
+    "airline": "AkasaAir",
     "departure": "14:00",
     "duration": "2h 30m",
     "arrival": "16:30",
@@ -335,7 +360,8 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 27,
@@ -348,7 +374,8 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 28,
@@ -361,7 +388,8 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 29,
@@ -374,11 +402,12 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 30,
-    "airline": "Air India",
+    "airline": "AirIndia",
     "departure": "18:20",
     "duration": "2h 25m",
     "arrival": "20:45",
@@ -387,11 +416,12 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 31,
-    "airline": "GoAir",
+    "airline": "AkasaAir",
     "departure": "22:00",
     "duration": "2h 30m",
     "arrival": "00:30",
@@ -400,7 +430,8 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 32,
@@ -413,7 +444,8 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 33,
@@ -426,11 +458,12 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 34,
-    "airline": "Air India",
+    "airline": "AirIndia",
     "departure": "23:15",
     "duration": "2h 40m",
     "arrival": "01:55",
@@ -439,7 +472,8 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 35,
@@ -452,11 +486,12 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 36,
-    "airline": "GoAir",
+    "airline": "AkasaAir",
     "departure": "10:25",
     "duration": "2h 15m",
     "arrival": "12:40",
@@ -465,7 +500,8 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 37,
@@ -478,7 +514,8 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 38,
@@ -491,7 +528,8 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 39,
@@ -504,11 +542,12 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 40,
-    "airline": "Air India",
+    "airline": "AirIndia",
     "departure": "14:25",
     "duration": "2h 40m",
     "arrival": "17:05",
@@ -517,7 +556,8 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 41,
@@ -530,7 +570,8 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 42,
@@ -543,7 +584,8 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+    "refundable": true 
   },
   {
     "id": 43,
@@ -556,11 +598,12 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 44,
-    "airline": "Air India",
+    "airline": "AirIndia",
     "departure": "15:35",
     "duration": "2h 40m",
     "arrival": "18:15",
@@ -569,7 +612,8 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 45,
@@ -582,7 +626,8 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 46,
@@ -595,7 +640,8 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 47,
@@ -608,11 +654,12 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 48,
-    "airline": "Air India",
+    "airline": "AirIndia",
     "departure": "11:50",
     "duration": "2h 40m",
     "arrival": "14:30",
@@ -621,7 +668,8 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 49,
@@ -634,11 +682,12 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   },
   {
     "id": 50,
-    "airline": "GoAir",
+    "airline": "AkasaAir",
     "departure": "16:45",
     "duration": "2h 35m",
     "arrival": "19:20",
@@ -647,6 +696,7 @@
     "fromCode": "DEL",
     "to": "Mumbai, India",
     "toCode": "BCM",
-    "emiPrice": 1550
+    "emiPrice": 1550,
+"refundable": true 
   }
 ]

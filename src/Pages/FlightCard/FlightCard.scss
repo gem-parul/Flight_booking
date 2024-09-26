@@ -3,10 +3,32 @@
   flex-direction: column;
   padding: 15px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 8px;
   background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(99, 98, 98, 0.2);
   transition: transform 0.2s;
+  .flight-details-link {
+    color: #1a73e8; /* Blue color similar to the image */
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  .refund{
+    color: #626e93;
+
+  }
+  .dropdown-icon {
+    font-size: 16px;
+    color: #1a73e8;
+    transform: rotate(-90deg);
+  }
+  
+  .detailed{
+    display: flex;
+    justify-content: space-between;
+  }
   .duration{
     position: relative;
     top: -4px;
@@ -19,9 +41,15 @@
     transform: scale(1.01);
   }
   .airline {
-    font-weight: bold;
-    font-size: 18px;
+    display: flex;
+    font-weight: 400;
+    font-size: 21px;
     margin-bottom: 2rem;
+    align-items: center;
+    .airline-img{
+      height: 7.5vh;
+      margin-right: 1vw ;
+    }
   }
   .flight-details {
     display: flex;
@@ -54,7 +82,7 @@
         }
       }
       .time {
-        font-size: 24px;
+        font-size: 21px;
         color: #555;
         font-weight:600;
       }
