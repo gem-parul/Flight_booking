@@ -1,6 +1,18 @@
-.dashboard{
-    background: #d8e6ee;
-    .sort-by{
-        font-weight: 500;
-    }
+.dashboard {
+  background: #d8e6ee;
+  .sort-by {
+    font-weight: 500;
+  }
+  .icon-style {
+    font-size: 24px;
+    cursor: pointer;
+    color: #ff6600;
+  }
+  .icon-style:hover {
+    color: #ff3700;
+  }
+  .logout-icon {
+    display: flex;
+    align-items: center;
+  }
 }

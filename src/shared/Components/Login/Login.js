@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { showToast } from "./../../utilities/generic-functions";
-import ToastNotification from "../ToastNotification/ToastNotification"; 
-import './Login.scss'
+import ToastNotification from "../ToastNotification/ToastNotification";
+import "./Login.scss";
 const Login = () => {
   const navigate = useNavigate();
   const [input, setInput] = useState({
@@ -15,14 +15,16 @@ const Login = () => {
   });
 
   const validateUsername = (username) => {
-    const usernameRegex = /^[a-zA-Z]+$/; // Only alphabets
+    const usernameRegex = /^[a-zA-Z]+$/;
     if (!username) return "Username is required";
-    if (!usernameRegex.test(username)) return "Username must contain only alphabets";
+    if (!usernameRegex.test(username))
+      return "Username must contain only alphabets";
     return "";
   };
 
   const validatePassword = (password) => {
-    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+    const passwordRegex =
+      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
     if (!password) return "Password is required";
     if (!passwordRegex.test(password))
       return "Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character";
@@ -40,14 +42,11 @@ const Login = () => {
       }
     }
   };
-  
-  
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setInput({ ...input, [name]: value });
 
-    // Validate inputs as they are entered
     if (name === "username") {
       setErrors({ ...errors, username: validateUsername(value) });
     } else if (name === "password") {
@@ -55,51 +54,59 @@ const Login = () => {
     }
   };
 
-  const isFormValid = !errors.username && !errors.password && input.username && input.password;
+  const isFormValid =
+    !errors.username && !errors.password && input.username && input.password;
 
   return (
     <>
       <ToastNotification />
-        <div class="back">
-  <img src="/assets/login.png" alt="loginImage" class="login-img" />
-  <div class="card">
-  
-      <form onSubmit={handleLogin}>
-          <div className="form-group">
-            <label htmlFor="username">Username:</label>
-            <input
-              type="text"
-              className="form-control"   
-              name="username"
-              value={input.username}
-              onChange={handleInputChange}
-              id="username"
-            />
-            {errors.username && (
-                  <small className="text-danger">{errors.username}</small>
-                )}
-          </div>
-          <div className="form-group">   
-
-            <label htmlFor="password">Password:</label>
-            <input
-              type="password"
-              className="form-control"
-              name="password"
-              value={input.password}
-              onChange={handleInputChange}
-              id="password"
-            />
-            {errors.password && (
-                  <small className="text-danger">{errors.password}</small>
-                )}
-          </div>
-          <button  type="submit"
-                  disabled={!isFormValid}className="btn btn-primary">Submit</button>   
-        </form>
-  </div>
-</div>
-
+      <div className="back">
+        <img src="/assets/login-img.jpg" alt="Image Not Found" className="login-img" />
+        <div className="main-card">
+          <form onSubmit={handleLogin}>
+            <div className="form-group">
+              <span class="login-text">LOGIN</span>
+              <span class="cred">Please enter your login credentials</span>{" "}
+            </div>
+            <div className="form-group">
+              <label htmlFor="username">Username</label>
+              <input
+                type="text"
+                className="form-control"
+                name="username"
+                value={input.username}
+                onChange={handleInputChange}
+                id="username"
+              />
+              {errors.username && (
+                <small className="text-danger">{errors.username}</small>
+              )}
+            </div>
+            <div className="form-group">
+              {" "}
+               <label htmlFor="password">Password</label>
+              <input
+                type="password"
+                className="form-control"
+                name="password"
+                value={input.password}
+                onChange={handleInputChange}
+                id="password"
+              />
+              {errors.password && (
+                <small className="text-danger">{errors.password}</small>
+              )}
+            </div>
+            <button
+              type="submit"
+              disabled={!isFormValid}
+              className=" submit-button"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
     </>
   );
 };

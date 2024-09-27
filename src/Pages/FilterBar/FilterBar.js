@@ -10,7 +10,6 @@ const FilterBar = ({ activeFilters, applyFilters }) => {
       ? selectedFilters.filter((f) => f !== filter)
       : [...selectedFilters, filter];
 
-    // Toggle sort direction (ascending/descending)
     const currentDirection = sortDirection[filter] || "asc";
     const newDirection = currentDirection === "asc" ? "desc" : "asc";
 

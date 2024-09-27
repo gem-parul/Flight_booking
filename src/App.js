@@ -4,15 +4,18 @@ import Dashboard from "./Pages/Dashboard/Dashboard";
 import Login from "./shared/Components/Login/Login";
 import ProtectedRoutes from "./Services/ProtectedRoutes";
 import "./App.scss";
+import NotFound from "./shared/Components/NotFound/NotFound";
+
 const App = () => {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/login" element={<Login/>}/>
-          <Route path="/" element={<ProtectedRoutes/>}>
-            <Route path="/all-flights" element={<Dashboard/>} />
-        </Route>
+          <Route path="/" element={<Login />} />
+          <Route path="/all-flights" element={<ProtectedRoutes />}>
+            <Route path="" element={<Dashboard />} /> 
+          </Route>
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </>

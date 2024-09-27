@@ -3,9 +3,8 @@ import { useNavigate } from "react-router-dom";
 import flightData from "./../../Data/FlightData.json";
 import FlightList from "./../FlightList/FlightList";
 import FilterBar from "./../FilterBar/FilterBar";
-import { showToast } from "../../shared/utilities/generic-functions";
+import { FaSignOutAlt } from "react-icons/fa";
 import "./Dashboard.scss";
-import ToastNotification from "../../shared/Components/ToastNotification/ToastNotification";
 
 const Dashboard = ({ location }) => {
   const navigate = useNavigate();
@@ -14,11 +13,13 @@ const Dashboard = ({ location }) => {
 
   const handleLogout = () => {
     localStorage.clear();
-    navigate("/login");
+    navigate("/");
   };
   useEffect(() => {
-    const storedFlights = JSON.parse(localStorage.getItem("flights")) || flightData;
-    const storedFilters = JSON.parse(localStorage.getItem("activeFilters")) || [];
+    const storedFlights =
+      JSON.parse(localStorage.getItem("flights")) || flightData;
+    const storedFilters =
+      JSON.parse(localStorage.getItem("activeFilters")) || [];
     setFlights(storedFlights);
     setActiveFilters(storedFilters);
   }, []);
@@ -57,18 +58,21 @@ const Dashboard = ({ location }) => {
   };
 
   return (
-    <div className="dashboard">
-      <button onClick={handleLogout} className="btn btn-success">
-        Logout
-      </button>
+    <div className="dashboard p-2">
       <div className="p-2">
-        <span className="pl-3 sort-by">Sort By</span>
+        <div className="d-flex justify-content-between align-items-center pl-3 pr-3">
+          <span className=" sort-by">Sort By</span>
+          <FaSignOutAlt
+            onClick={handleLogout}
+            data-tip="Logout"
+            className="icon-style"
+          />
+        </div>
         <FilterBar activeFilters={activeFilters} applyFilters={applyFilters} />
       </div>
       <div className="p-2">
         <FlightList flights={flights} />
       </div>
-      <ToastNotification/>
     </div>
   );
 };
