@@ -22,9 +22,6 @@
   align-items: center;
   background-color: rgb(247 241 237);
 }
-.password-input-container {
-  position: relative;
-}
 
 .password-input-container input {
   width: 100%;
@@ -38,6 +35,17 @@
   transform: translateY(-50%);
   cursor: pointer;
   color: #999;
+}
+.password-container {
+  position: relative;
+}
+
+.password-toggle-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
 }
 
 form {

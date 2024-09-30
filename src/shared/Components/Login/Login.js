@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { showToast } from "./../../utilities/generic-functions";
 import ToastNotification from "../ToastNotification/ToastNotification";
 import "./Login.scss";
-import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { FaEye, FaEyeSlash } from "react-icons/fa"; // Import icons for showing/hiding password
 
 const Login = () => {
   const navigate = useNavigate();
@@ -15,24 +15,7 @@ const Login = () => {
     username: "",
     password: "",
   });
-  const [showPassword, setShowPassword] = useState(false);
-
-  const checkAutoFill = () => {
-    const usernameInput = document.getElementById("username").value;
-    const passwordInput = document.getElementById("password").value;
-
-    if (usernameInput) setErrors((prev) => ({ ...prev, username: validateUsername(usernameInput) }));
-    if (passwordInput) setErrors((prev) => ({ ...prev, password: validatePassword(passwordInput) }));
-
-    setInput({
-      username: usernameInput || "",
-      password: passwordInput || "",
-    });
-  };
-
-  useEffect(() => {
-    checkAutoFill();
-  }, [checkAutoFill]);
+  const [showPassword, setShowPassword] = useState(false); // State to toggle password visibility
 
   const validateUsername = (username) => {
     const usernameRegex = /^[a-zA-Z]+$/;
@@ -81,12 +64,16 @@ const Login = () => {
     <>
       <ToastNotification />
       <div className="back">
-        <img src="/assets/login-img.jpg" alt="login-img-not-found" className="login-img" />
+        <img
+          src="/assets/login-img.jpg"
+          alt="Image Not Found"
+          className="login-img"
+        />
         <div className="main-card">
           <form onSubmit={handleLogin}>
             <div className="form-group">
               <span className="login-text">LOGIN</span>
-              <span className="cred">Please enter your login credentials</span>
+              <span className="cred">Please enter your login credentials</span>{" "}
             </div>
             <div className="form-group">
               <label htmlFor="username">Username</label>
@@ -102,11 +89,11 @@ const Login = () => {
                 <small className="text-danger">{errors.username}</small>
               )}
             </div>
-            <div className="form-group">
-              <label htmlFor="password">Password</label>
-              <div className="password-input-container">
+            <div className="form-group password-group">
+               <label htmlFor="password">Password</label>
+              <div className="password-container">
                 <input
-                  type={showPassword ? "text" : "password"}
+                  type={showPassword ? "text" : "password"} // Toggle input type based on showPassword state
                   className="form-control"
                   name="password"
                   value={input.password}
@@ -115,7 +102,7 @@ const Login = () => {
                 />
                 <span
                   className="password-toggle-icon"
-                  onClick={() => setShowPassword(!showPassword)}
+                  onClick={() => setShowPassword(!showPassword)} // Toggle the password visibility
                 >
                   {showPassword ? <FaEyeSlash /> : <FaEye />}
                 </span>
