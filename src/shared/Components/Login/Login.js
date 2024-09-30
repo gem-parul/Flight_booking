@@ -67,6 +67,7 @@ const Login = () => {
         <img
           src="/assets/login-img.jpg"
           className="login-img"
+          alt=""
         />
         <div className="main-card">
           <form onSubmit={handleLogin}>
