@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { showToast } from "./../../utilities/generic-functions";
 import ToastNotification from "../ToastNotification/ToastNotification";
 import "./Login.scss";
+import { FaEye, FaEyeSlash } from "react-icons/fa"; // For eye icon
+
 const Login = () => {
   const navigate = useNavigate();
   const [input, setInput] = useState({
@@ -13,6 +15,24 @@ const Login = () => {
     username: "",
     password: "",
   });
+  const [showPassword, setShowPassword] = useState(false); // For toggling password visibility
+
+  const checkAutoFill = () => {
+    const usernameInput = document.getElementById("username").value;
+    const passwordInput = document.getElementById("password").value;
+
+    if (usernameInput) setErrors((prev) => ({ ...prev, username: validateUsername(usernameInput) }));
+    if (passwordInput) setErrors((prev) => ({ ...prev, password: validatePassword(passwordInput) }));
+
+    setInput({
+      username: usernameInput || "",
+      password: passwordInput || "",
+    });
+  };
+
+  useEffect(() => {
+    checkAutoFill();
+  }, []);
 
   const validateUsername = (username) => {
     const usernameRegex = /^[a-zA-Z]+$/;
@@ -65,8 +85,8 @@ const Login = () => {
         <div className="main-card">
           <form onSubmit={handleLogin}>
             <div className="form-group">
-              <span class="login-text">LOGIN</span>
-              <span class="cred">Please enter your login credentials</span>{" "}
+              <span className="login-text">LOGIN</span>
+              <span className="cred">Please enter your login credentials</span>
             </div>
             <div className="form-group">
               <label htmlFor="username">Username</label>
@@ -83,16 +103,23 @@ const Login = () => {
               )}
             </div>
             <div className="form-group">
-              {" "}
-               <label htmlFor="password">Password</label>
-              <input
-                type="password"
-                className="form-control"
-                name="password"
-                value={input.password}
-                onChange={handleInputChange}
-                id="password"
-              />
+              <label htmlFor="password">Password</label>
+              <div className="password-input-container">
+                <input
+                  type={showPassword ? "text" : "password"}
+                  className="form-control"
+                  name="password"
+                  value={input.password}
+                  onChange={handleInputChange}
+                  id="password"
+                />
+                <span
+                  className="password-toggle-icon"
+                  onClick={() => setShowPassword(!showPassword)}
+                >
+                  {showPassword ? <FaEyeSlash /> : <FaEye />}
+                </span>
+              </div>
               {errors.password && (
                 <small className="text-danger">{errors.password}</small>
               )}
@@ -100,7 +127,7 @@ const Login = () => {
             <button
               type="submit"
               disabled={!isFormValid}
-              className=" submit-button"
+              className="submit-button"
             >
               Submit
             </button>

@@ -1,9 +1,7 @@
-// NotFound.js
 import React from 'react';
 import { Link } from 'react-router-dom';
 import "./NotFound.scss";
 const NotFound = () => {
-    // Check if user is logged in
     const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
 
     return (

@@ -6,7 +6,7 @@ import FilterBar from "./../FilterBar/FilterBar";
 import { FaSignOutAlt } from "react-icons/fa";
 import "./Dashboard.scss";
 
-const Dashboard = ({ location }) => {
+const Dashboard = () => {
   const navigate = useNavigate();
   const [flights, setFlights] = useState([]);
   const [activeFilters, setActiveFilters] = useState([]);
@@ -24,6 +24,10 @@ const Dashboard = ({ location }) => {
     setActiveFilters(storedFilters);
   }, []);
 
+  /**
+   * Method to apply filters
+   * @param {*} newFilters 
+   */
   const applyFilters = (newFilters) => {
     setActiveFilters(newFilters);
     localStorage.setItem("activeFilters", JSON.stringify(newFilters));
