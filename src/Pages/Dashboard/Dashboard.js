@@ -24,10 +24,6 @@ const Dashboard = () => {
     setActiveFilters(storedFilters);
   }, []);
 
-  /**
-   * Method to apply filters
-   * @param {*} newFilters 
-   */
   const applyFilters = (newFilters) => {
     setActiveFilters(newFilters);
     localStorage.setItem("activeFilters", JSON.stringify(newFilters));
