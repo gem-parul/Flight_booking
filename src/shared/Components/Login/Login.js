@@ -66,7 +66,6 @@ const Login = () => {
       <div className="back">
         <img
           src="/assets/login-img.jpg"
-          alt="Image Not Found"
           className="login-img"
         />
         <div className="main-card">
