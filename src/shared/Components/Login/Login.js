@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { showToast } from "./../../utilities/generic-functions";
 import ToastNotification from "../ToastNotification/ToastNotification";
 import "./Login.scss";
-import { FaEye, FaEyeSlash } from "react-icons/fa"; // For eye icon
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -15,7 +15,7 @@ const Login = () => {
     username: "",
     password: "",
   });
-  const [showPassword, setShowPassword] = useState(false); // For toggling password visibility
+  const [showPassword, setShowPassword] = useState(false);
 
   const checkAutoFill = () => {
     const usernameInput = document.getElementById("username").value;
@@ -32,7 +32,7 @@ const Login = () => {
 
   useEffect(() => {
     checkAutoFill();
-  }, []);
+  }, [checkAutoFill]);
 
   const validateUsername = (username) => {
     const usernameRegex = /^[a-zA-Z]+$/;
@@ -81,7 +81,7 @@ const Login = () => {
     <>
       <ToastNotification />
       <div className="back">
-        <img src="/assets/login-img.jpg" alt="Image Not Found" className="login-img" />
+        <img src="/assets/login-img.jpg" alt="login-img-not-found" className="login-img" />
         <div className="main-card">
           <form onSubmit={handleLogin}>
             <div className="form-group">
